@@ -17,47 +17,38 @@ export default function SyncWearablesSection() {
           </p>
         </div>
 
-        {/* Circle with Wearables */}
-        <div className="relative w-[80%] max-w-[797px] mx-auto mt-12">
-          {/* Circular Background */}
-          <div className="relative bg-purple-50 rounded-full w-full h-full aspect-square flex items-center justify-center">
-            {/* Central Mockup */}
-            <Image
-              src="/Frame 2.png" // Replace with your actual image
-              alt="App Mockup"
-              width={594}
-              height={594}
-              className="z-10"
-            />
-          </div>
-
-          {/* Wearables Logos */}
-          <div className="absolute -left-6 w-[110%] h-[120%] md:w-full md:h-full top-[60px] bottom-[70px] md:top-[189px] md:bottom-[189px] flex items-center justify-center ">
-            {/* Position Wearables Around the Circle */}
-            {wearables.map((wearable, index) => (
-              <div
-                key={index}
-                style={{
-                  ...wearable.style,
-                  boxShadow:
-                    "0px 2.77px 6.92px 0px rgba(51, 51, 51, 0.12), 0px 1.38px 2.77px 0px rgba(51, 51, 51, 0.04)",
-                  transform: `${wearable.style.transform} rotate(-10.55deg)`,
-                }}
-                className="absolute bg-white rounded-[7.72px] md:rounded-tl-[12.54px] lg:rounded-[18.75px]
-                w-[70px] h-[70.16px] md:w-[80.88px] md:h-[80.88px] lg:w-[100px] lg:h-[100px]
-                p-[10.72px_8.8px_10.65px_8.99px] md:p-[17.42px_14.3px_17.31px_14.61px] lg:p-[26.05px_21.38px_25.88px_21.85px]
+        <div className=" w-[90%] h-[90%] ">
+          <div className="mx-auto relative max-w-[500px] max-h-[500px]  w-[85vw] h-[85vw] bg-[rgba(248,247,255,1)] rounded-full flex items-center justify-center">
+            <div className="w-[75%] h-[75%] bg-[rgba(239,238,255,1)] rounded-full ">
+              <Image
+                src="/Frame 2.png" // Replace with your actual image
+                alt="App Mockup"
+                width={594}
+                height={594}
+                className="z-10"
+              />
+              {wearables.map((wearable, index) => (
+                <div
+                  key={index}
+                  style={{
+                    ...wearable.style,
+                  }}
+                  className="absolute  rounded-[7.72px] md:rounded-tl-[12.54px] lg:rounded-[18.75px]
+                w-[100px] h-[100px] md:w-[80.88px] md:h-[80.88px] lg:w-[100px] lg:h-[100px]
+               
                 flex items-center justify-center"
-              >
-                <Image
-                  src={wearable.icon}
-                  alt={wearable.name}
-                  width={130}
-                  height={130}
-                  objectFit="contain"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            ))}
+                >
+                  <Image
+                    src={wearable.icon}
+                    alt={wearable.name}
+                    width={130}
+                    height={130}
+                    objectFit="contain"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -69,31 +60,31 @@ const wearables = [
   {
     name: "Fitbit",
     icon: "/icons/integration (2).svg",
-    style: { bottom: "20%", right: "10%" },
+    style: { bottom: "20%", right: "0%" },
   },
   {
     name: "Oura",
     icon: "/icons/integration (4).svg",
-    style: { top: "25%", left: "-10%" },
+    style: { top: "20%", left: "0%" },
   },
   {
     name: "Custom Tracker",
     icon: "/icons/integration (5).svg",
-    style: { bottom: "-20%", left: "50%", transform: "translate(-50%, 50%)" },
+    style: { bottom: "0%", left: "50%", transform: "translate(-50%, 50%)" },
   },
   {
     name: "Garmin",
     icon: "/icons/integration (3).svg",
-    style: { bottom: "20%", left: "10%" },
+    style: { bottom: "20%", left: "0%" },
   },
   {
     name: "Apple Health",
     icon: "/icons/integration.svg",
-    style: { top: "-20%", left: "50%", transform: "translate(-50%, -50%)" },
+    style: { top: "0%", left: "50%", transform: "translate(-50%, -50%)" },
   },
   {
     name: "Google Fit",
     icon: "/icons/integration (1).svg",
-    style: { top: "25%", right: "-10%" },
+    style: { top: "20%", right: "0%" },
   },
 ];
