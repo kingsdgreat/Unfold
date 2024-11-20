@@ -78,7 +78,7 @@ export default function WaitlistSection() {
                 </p>
                 <button
                   type="submit"
-                  className="py-2 px-4 bg-[#382CBE] text-white rounded-full hover:bg-blue-600 transition"
+                  className="py-2 px-4 hover:bg-[#382CBE] text-white rounded-full bg-blue-600 transition"
                 >
                   Join the waitlist
                 </button>

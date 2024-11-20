@@ -18,8 +18,8 @@ export default function TransformSection() {
             <Image
               src="/Dashboard (1).png" // Adjust path to your asset
               alt="Left content"
-              width={290} // Width of the left image
-              height={594} // Full height of the container
+              width={1000} // Width of the left image
+              height={2000} // Full height of the container
               className="w-[30%] lg:w-[40%] h-auto absolute bottom-0 right-[55%] z-10" // Lower the left image and keep it in front
             />
 
@@ -27,8 +27,8 @@ export default function TransformSection() {
             <Image
               src="/Dashboard.png" // Adjust path to your asset
               alt="Right content"
-              width={350} // Slightly larger width for the right image
-              height={594} // Full height of the container
+              width={1000} // Slightly larger width for the right image
+              height={2000} // Full height of the container
               className=" w-[40%] lg:w-[50%] h-auto bottom-0 absolute  right-[23%] z-20" // Keep it at the top and layer it over the left image
             />
           </div>
