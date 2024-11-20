@@ -34,7 +34,7 @@ export default function Navbar() {
               alt="Unfold Logo"
               className="h-5 w-auto"
             />
-            <span className="text-md font-[600] ml-2">Unfold</span>
+            <span className=" font-[700] ml-2">Unfold</span>
           </div>
 
           {/* Desktop Links */}

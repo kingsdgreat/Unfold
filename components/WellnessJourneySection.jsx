@@ -30,7 +30,7 @@ export default function WellnessJourneySection() {
             className="text-base md:text-lg lg:text-xl text-center lg:text-left"
             style={{ color: "rgba(255, 255, 255, 0.8)" }}
           >
-            Whether you're a mindfulness enthusiast, a busy professional, or
+            Whether you&apos;re a mindfulness enthusiast, a busy professional, or
             someone seeking balance, Unfold adapts to your needs:
           </p>
           <ul className="space-y-4 mx-auto lg:mx-0 w-max">

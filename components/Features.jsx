@@ -41,7 +41,7 @@ export default function KeyFeaturesSection() {
           </div>
 
           {/* Description and Button */}
-          <p className="text-[18px] leading-[22px] text-[#151318]  font-thin  relative z-10 text-center md:text-left">
+          <p className="text-[18px] leading-[22px] text-[#151318]  font-medium  relative z-10 text-center md:text-left">
             Unfold is an AI-enhanced journaling app designed to help you
             reflect, grow, and connect the dots between your emotional and
             physical wellness. By integrating with popular health wearables like
