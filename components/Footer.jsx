@@ -38,25 +38,19 @@ export default function Footer() {
               onClick={() => handleScroll("hero")}
               className="hover:text-gray-100 transition focus:outline-none"
             >
-              About Us
-            </button>
-            <button
-              onClick={() => handleScroll("features")}
-              className="hover:text-gray-100 transition focus:outline-none"
-            >
-              Contact Us
+              Home
             </button>
             <button
               onClick={() => handleScroll("transform")}
-              className="hover:text-gray-100 whitespace-nowrap transition focus:outline-none"
-            >
-              Terms & Conditions
-            </button>
-            <button
-              onClick={() => handleScroll("faq")}
               className="hover:text-gray-100 transition focus:outline-none"
             >
-              Privacy
+              Features
+            </button>
+            <button
+              onClick={() => handleScroll("sync")}
+              className="hover:text-gray-100 whitespace-nowrap transition focus:outline-none"
+            >
+              Partnerships
             </button>
             <button
               onClick={() => handleScroll("faq")}
@@ -65,6 +59,7 @@ export default function Footer() {
               FAQ
             </button>
           </div>
+
 
           {/* Right Section - Social Media Links */}
           <div className="flex flex-col items-center lg:items-end space-y-3">

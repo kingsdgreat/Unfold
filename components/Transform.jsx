@@ -33,7 +33,7 @@ export default function TransformSection() {
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 bg-white gap-4">
-            {features.slice(4, 8).map((feature, index) => (
+            {features.slice(0, 4).map((feature, index) => (
               <div
                 key={index}
                 className="h-full p-4 pb-8 rounded-xl bg-[#F9F9F9] shadow-sm flex flex-col items-start justify-start"

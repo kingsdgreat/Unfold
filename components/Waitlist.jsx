@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function WaitlistSection() {
@@ -33,10 +34,12 @@ export default function WaitlistSection() {
       <div className="max-w-7xl mx-auto relative">
         <div className="flex flex-col items-center justify-center relative">
           <div className="max-w-[100%] w-[100%] sm:w-[70%] sm:max-w-[800px]  sm:self-end h-[500px]">
-            <img
+            <Image
               src="/Frame 1 (2).png"
               alt="Nature Inspiration"
               className="rounded-lg shadow-lg h-full w-full object-cover"
+              width={800}
+              height={500}
             />
           </div>
 
@@ -73,7 +76,7 @@ export default function WaitlistSection() {
                   required
                 />
                 {status && <p className="text-sm text-green-600">{status}</p>}
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-900">
                   This form collects your email so that we can reach you back.
                 </p>
                 <button

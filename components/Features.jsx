@@ -3,6 +3,13 @@
 import Image from "next/image";
 
 export default function KeyFeaturesSection() {
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <section className=" relative mx-auto bg-white text-black py-16 px-6 md:px-12 lg:px-24">
       <div className="pb-[120px] lg:pb-[180px] w-full max-w-screen-xl my-auto mx-auto md:grid md:grid-cols-2 items-center gap-12 relative">
@@ -41,7 +48,7 @@ export default function KeyFeaturesSection() {
           </div>
 
           {/* Description and Button */}
-          <p className="text-[18px] leading-[22px] text-[#151318]  font-thin  relative z-10 text-center md:text-left">
+          <p className="text-[18px] leading-[22px] text-[#151318]  font-medium  relative z-10 text-center md:text-left">
             Unfold is an AI-enhanced journaling app designed to help you
             reflect, grow, and connect the dots between your emotional and
             physical wellness. By integrating with popular health wearables like
@@ -49,7 +56,7 @@ export default function KeyFeaturesSection() {
             body data together in one place.
           </p>
 
-          <button className="bg-blue-700 hover:bg-blue-800 text-white font-medium px-4 py-2 rounded-full shadow-md transition relative z-10 mt-6 mx-auto md:mx-0 block">
+          <button onClick={() => handleScroll("waitlist")}  className="bg-blue-700 hover:bg-blue-800 text-white font-medium px-4 py-2 rounded-full shadow-md transition relative z-10 mt-6 mx-auto md:mx-0 block">
             Be the First to Try It
           </button>
         </div>

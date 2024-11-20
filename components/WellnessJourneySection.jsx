@@ -30,7 +30,7 @@ export default function WellnessJourneySection() {
             className="text-base md:text-lg lg:text-xl text-center lg:text-left"
             style={{ color: "rgba(255, 255, 255, 0.8)" }}
           >
-            Whether you're a mindfulness enthusiast, a busy professional, or
+            Whether you&apos;re a mindfulness enthusiast, a busy professional, or
             someone seeking balance, Unfold adapts to your needs:
           </p>
           <ul className="space-y-4 mx-auto lg:mx-0 w-max">
@@ -55,12 +55,12 @@ export default function WellnessJourneySection() {
                   backgroundClip: "padding-box",
                 }}
                 onMouseOver={(e) =>
-                  (e.currentTarget.style.backgroundColor =
-                    "rgba(255, 255, 255, 0.3)")
+                (e.currentTarget.style.backgroundColor =
+                  "rgba(255, 255, 255, 0.3)")
                 }
                 onMouseOut={(e) =>
-                  (e.currentTarget.style.backgroundColor =
-                    "rgba(248, 247, 255, 0.15)")
+                (e.currentTarget.style.backgroundColor =
+                  "rgba(248, 247, 255, 0.15)")
                 }
               >
                 {text}
@@ -72,9 +72,10 @@ export default function WellnessJourneySection() {
         {/* Right Content */}
         <div className="space-y-4">
           <blockquote className="text-xl md:text-2xl lg:text-3xl italic text-center lg:text-left">
-            "The concept of syncing mind and body is revolutionary. Unfold is
-            set to redefine how we approach mental wellness."
+            &quot;The concept of syncing mind and body is revolutionary. Unfold is
+            set to redefine how we approach mental wellness.&quot;
           </blockquote>
+
           <cite
             className="block mt-2 text-center lg:text-left"
             style={{ color: "rgba(255, 255, 255, 0.8)" }}

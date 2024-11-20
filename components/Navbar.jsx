@@ -34,36 +34,37 @@ export default function Navbar() {
               alt="Unfold Logo"
               className="h-5 w-auto"
             />
-            <span className="text-md font-[600] ml-2">Unfold</span>
+            <span className=" font-[700] ml-2">Unfold</span>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-[34px]">
             <button
-              onClick={() => handleScroll("features")}
+              onClick={() => handleScroll("hero")}
+              className="text-gray-900 hover:text-gray-700 focus:outline-none"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => handleScroll("transform")}
               className="text-gray-900 hover:text-gray-700 focus:outline-none"
             >
               Features
             </button>
             <button
+              onClick={() => handleScroll("sync")}
+              className="text-gray-900 hover:text-gray-700 focus:outline-none"
+            >
+              Partnerships
+            </button>
+            <button
               onClick={() => handleScroll("faq")}
               className="text-gray-900 hover:text-gray-700 focus:outline-none"
             >
-              Privacy Policy
-            </button>
-            <button
-              onClick={() => handleScroll("waitlist")}
-              className="text-gray-900 hover:text-gray-700 focus:outline-none"
-            >
-              Pricing
-            </button>
-            <button
-              onClick={() => handleScroll("blog")}
-              className="text-gray-900 hover:text-gray-700 focus:outline-none"
-            >
-              Blog
+              FAQ
             </button>
           </div>
+
 
           {/* Desktop Button */}
           <div className="hidden md:block">
@@ -105,7 +106,15 @@ export default function Navbar() {
             <ul className="flex flex-col space-y-4 p-4">
               <li>
                 <button
-                  onClick={() => handleScroll("features")}
+                  onClick={() => handleScroll("hero")}
+                  className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleScroll("transform")}
                   className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
                 >
                   Features
@@ -113,26 +122,18 @@ export default function Navbar() {
               </li>
               <li>
                 <button
+                  onClick={() => handleScroll("sync")}
+                  className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
+                >
+                  Partnerships
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => handleScroll("faq")}
                   className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
                 >
-                  Privacy Policy
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleScroll("waitlist")}
-                  className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
-                >
-                  Pricing
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleScroll("blog")}
-                  className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
-                >
-                  Blog
+                  FAQ
                 </button>
               </li>
               <li>
@@ -144,6 +145,7 @@ export default function Navbar() {
                 </button>
               </li>
             </ul>
+
           </div>
         )}
       </div>
