@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function WellnessJourneySection() {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center text-white px-6 md:px-12 lg:px-24"
+      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center text-white px-6 md:px-12 lg:px-24 py-16"
       style={{
         backgroundImage: "url('/image2.png')", // Replace with your background image path
         backdropFilter: "blur(10px)", // For a modern blurred effect
@@ -33,7 +33,7 @@ export default function WellnessJourneySection() {
             Whether you're a mindfulness enthusiast, a busy professional, or
             someone seeking balance, Unfold adapts to your needs:
           </p>
-          <ul className="space-y-4">
+          <ul className="space-y-4 sm:mx-auto lg:mx-0 w-max">
             {[
               "Reflect on your emotions and goals.",
               "Understand your stress levels and energy.",
@@ -41,18 +41,18 @@ export default function WellnessJourneySection() {
             ].map((text, index) => (
               <li
                 key={index}
-                className="max-w-[460px] h-[49px]  text-center lg:text-left rounded-lg"
+                className="max-w-[460px] h-[49px]  text-center lg:text-left"
                 style={{
                   backgroundColor: "rgba(248, 247, 255, 0.15)", // #F8F7FF26
                   padding: "12px",
                   gap: "16px",
                   border: "1px solid",
-                  borderRadius: "12px",
                   borderImageSource:
                     "linear-gradient(90deg, #D0CCFF 0%, #1A1458 100%)",
                   borderImageSlice: "1",
                   backdropFilter: "blur(10px)",
                   transition: "background-color 0.3s ease",
+                  backgroundClip: "padding-box",
                 }}
                 onMouseOver={(e) =>
                   (e.currentTarget.style.backgroundColor =

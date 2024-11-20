@@ -11,16 +11,16 @@ export default function TransformSection() {
           Transform the Way You Journal
         </h2>
 
-        <div className="w-full grid grid-cols-2 gap-8">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Top Content (Mockup Images Combined Layout) */}
-          <div className="w-full relative bg-[#F9F9F9]  h-[594px] rounded-tl-[25.59px] mx-auto overflow-hidden">
+          <div className="  w-full relative bg-[#F9F9F9]  h-[400px] sm:h-[500px] md:h-[594px] rounded-tl-[25.59px] mx-auto overflow-hidden">
             {/* Left image (lowered and positioned) */}
             <Image
               src="/Dashboard (1).png" // Adjust path to your asset
               alt="Left content"
               width={290} // Width of the left image
               height={594} // Full height of the container
-              className="w-[40%] h-auto absolute bottom-0 right-[260px] z-10" // Lower the left image and keep it in front
+              className="w-[30%] lg:w-[40%] h-auto absolute bottom-0 right-[55%] z-10" // Lower the left image and keep it in front
             />
 
             {/* Right image (partially covering left image) */}
@@ -29,10 +29,10 @@ export default function TransformSection() {
               alt="Right content"
               width={350} // Slightly larger width for the right image
               height={594} // Full height of the container
-              className=" w-[50%] h-auto bottom-0 absolute  right-12 z-20" // Keep it at the top and layer it over the left image
+              className=" w-[40%] lg:w-[50%] h-auto bottom-0 absolute  right-[23%] z-20" // Keep it at the top and layer it over the left image
             />
           </div>
-          <div className="grid grid-cols-2 grid-rows-2 bg-white gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 bg-white gap-4">
             {features.slice(0, 4).map((feature, index) => (
               <div
                 key={index}

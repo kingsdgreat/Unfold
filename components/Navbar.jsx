@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white fixed w-full z-30 top-0 h-[71px] start-0 border-b border-gray-200 flex items-center justify-center">
-      <div className="w-full max-w-screen-xl my-auto  mx-auto">
+      <div className="w-full max-w-screen-xl my-auto mx-auto">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-2">
           {/* Logo Section */}
           <div
@@ -46,13 +46,13 @@ export default function Navbar() {
               Features
             </button>
             <button
-              onClick={() => handleScroll("privacy")}
+              onClick={() => handleScroll("faq")}
               className="text-gray-900 hover:text-gray-700 focus:outline-none"
             >
               Privacy Policy
             </button>
             <button
-              onClick={() => handleScroll("pricing")}
+              onClick={() => handleScroll("waitlist")}
               className="text-gray-900 hover:text-gray-700 focus:outline-none"
             >
               Pricing
@@ -67,7 +67,10 @@ export default function Navbar() {
 
           {/* Desktop Button */}
           <div className="hidden md:block">
-            <button className="text-white text-sm bg-blue-700 transition-colors duration-300 hover:bg-blue-800 rounded-full px-4 py-2 font-medium">
+            <button
+              onClick={() => handleScroll("waitlist")}
+              className="text-white text-sm bg-blue-700 transition-colors duration-300 hover:bg-blue-800 rounded-full px-4 py-2 font-medium"
+            >
               Join the Waitlist
             </button>
           </div>
@@ -110,7 +113,7 @@ export default function Navbar() {
               </li>
               <li>
                 <button
-                  onClick={() => handleScroll("privacy")}
+                  onClick={() => handleScroll("faq")}
                   className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
                 >
                   Privacy Policy
@@ -118,7 +121,7 @@ export default function Navbar() {
               </li>
               <li>
                 <button
-                  onClick={() => handleScroll("pricing")}
+                  onClick={() => handleScroll("waitlist")}
                   className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
                 >
                   Pricing
@@ -134,7 +137,7 @@ export default function Navbar() {
               </li>
               <li>
                 <button
-                  onClick={() => handleScroll("join")}
+                  onClick={() => handleScroll("waitlist")}
                   className="w-full text-white bg-blue-700 hover:bg-blue-800 rounded-full px-4 py-2 font-medium text-center transition duration-150 focus:outline-none"
                 >
                   Join the Waitlist

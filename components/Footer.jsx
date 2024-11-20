@@ -1,12 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Footer() {
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-black text-gray-400 py-6 pt-12 w-full">
-      <div className="max-w-screen-xl mx-auto px-6 flex justify-start  lg:justify-between items-center lg:gap-0 gap-4 lg:items-start space-y-6 lg:space-y-0">
+      <div className="max-w-screen-xl mx-auto px-6 flex justify-start lg:justify-between items-center lg:gap-0 gap-4 lg:items-start space-y-6 lg:space-y-0">
         {/* Left Section - Logo and Copyright */}
         <div className="flex flex-col items-center lg:items-start space-y-3">
           <div className="flex items-center space-x-3">
@@ -20,7 +26,7 @@ export default function Footer() {
               Unfold
             </span>
           </div>
-          <p className="text-sm text-center lg:text-left text-[#F9F9F9">
+          <p className="text-sm text-center lg:text-left text-[#F9F9F9]">
             © Copyright 2024 Unfold. All Rights Reserved
           </p>
         </div>
@@ -28,30 +34,43 @@ export default function Footer() {
         <div className="flex flex-col items-center lg:items-end space-y-3">
           {/* Center Section - Navigation Links */}
           <div className="flex flex-col items-start lg:flex-row lg:space-x-8 space-y-3 lg:space-y-0 text-sm text-gray-300">
-            <Link href="/about" className="hover:text-gray-100 transition">
+            <button
+              onClick={() => handleScroll("hero")}
+              className="hover:text-gray-100 transition focus:outline-none"
+            >
               About Us
-            </Link>
-            <Link href="/contact" className="hover:text-gray-100 transition">
+            </button>
+            <button
+              onClick={() => handleScroll("features")}
+              className="hover:text-gray-100 transition focus:outline-none"
+            >
               Contact Us
-            </Link>
-            <Link href="/terms" className="hover:text-gray-100 transition">
+            </button>
+            <button
+              onClick={() => handleScroll("transform")}
+              className="hover:text-gray-100 whitespace-nowrap transition focus:outline-none"
+            >
               Terms & Conditions
-            </Link>
-            <Link href="/privacy" className="hover:text-gray-100 transition">
+            </button>
+            <button
+              onClick={() => handleScroll("faq")}
+              className="hover:text-gray-100 transition focus:outline-none"
+            >
               Privacy
-            </Link>
-            <Link href="/faq" className="hover:text-gray-100 transition">
+            </button>
+            <button
+              onClick={() => handleScroll("faq")}
+              className="hover:text-gray-100 transition focus:outline-none"
+            >
               FAQ
-            </Link>
+            </button>
           </div>
 
           {/* Right Section - Social Media Links */}
           <div className="flex flex-col items-center lg:items-end space-y-3">
-            <span className="text-sm text-gray-500">
-              Find us on social media
-            </span>
+            <span className="text-sm text-gray-500">Find us on social media</span>
             <div className="flex space-x-4">
-              <Link href="https://twitter.com" target="_blank">
+              <a href="https://twitter.com" target="_blank" rel="noreferrer">
                 <Image
                   src="/icons/prime_twitter.svg"
                   alt="Twitter"
@@ -59,8 +78,8 @@ export default function Footer() {
                   height={20}
                   className="hover:opacity-80"
                 />
-              </Link>
-              <Link href="https://instagram.com" target="_blank">
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
                 <Image
                   src="/icons/Icon.svg"
                   alt="Instagram"
@@ -68,8 +87,8 @@ export default function Footer() {
                   height={20}
                   className="hover:opacity-80"
                 />
-              </Link>
-              <Link href="https://facebook.com" target="_blank">
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer">
                 <Image
                   src="/icons/Icon (1).svg"
                   alt="Facebook"
@@ -77,8 +96,8 @@ export default function Footer() {
                   height={20}
                   className="hover:opacity-80"
                 />
-              </Link>
-              <Link href="https://linkedin.com" target="_blank">
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                 <Image
                   src="/icons/mdi_linkedin.svg"
                   alt="LinkedIn"
@@ -86,7 +105,7 @@ export default function Footer() {
                   height={20}
                   className="hover:opacity-80"
                 />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

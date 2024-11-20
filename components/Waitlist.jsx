@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export default function WaitlistSection() {
   return (
@@ -6,11 +6,11 @@ export default function WaitlistSection() {
       <div className="max-w-7xl mx-auto relative">
         <div className="flex flex-col items-center justify-center relative">
           {/* Image Container - Positioned at the back */}
-          <div className="w-full max-w-[800px] lg:ml-auto">
+          <div className="w-[70%] max-w-[800px]  self-end h-[500px] ">
             <img
               src="/Frame 1 (2).png"
               alt="Nature Inspiration"
-              className="rounded-lg shadow-lg w-full object-cover"
+              className="rounded-lg shadow-lg  h-full w-full object-cover"
             />
           </div>
 
@@ -21,11 +21,15 @@ export default function WaitlistSection() {
                 Be the First to Experience Unfold
               </h2>
               <p className="font-gordita text-base font-normal leading-[18px] text-left">
-                Discover the future of wellness journaling — where mind meets body.
+                Discover the future of wellness journaling — where mind meets
+                body.
               </p>
 
               <form className="space-y-4">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Email
                 </label>
                 <input

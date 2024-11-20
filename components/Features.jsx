@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function KeyFeaturesSection() {
   return (
     <section className=" relative mx-auto bg-white text-black py-16 px-6 md:px-12 lg:px-24">
-      <div className="pb-[180px] w-full max-w-screen-xl my-auto mx-auto md:grid md:grid-cols-2 items-center gap-12 relative">
+      <div className="pb-[120px] lg:pb-[180px] w-full max-w-screen-xl my-auto mx-auto md:grid md:grid-cols-2 items-center gap-12 relative">
         {/* Dotted Background for Left */}
         <Image
           src="/Group (1).png"
@@ -13,7 +13,7 @@ export default function KeyFeaturesSection() {
           objectFit="contain"
           height={800}
           width={800}
-          className="absolute bottom-0 left-0 w-[226px] h-auto"
+          className="absolute bottom-0 left-0 w-[200px] h-auto"
         />
         {/* Left Content */}
         <div className="md:space-y-6">
@@ -31,13 +31,13 @@ export default function KeyFeaturesSection() {
               height={400}
               className="relative z-10"
             />
-            <Image
+            {/* <Image
               src="/Group.png"
               alt="Dotted Background Right"
               height={800}
               width={800}
               className="absolute -bottom-[100px] -left-[180px] w-[226px] h-auto"
-            />
+            /> */}
           </div>
 
           {/* Description and Button */}
