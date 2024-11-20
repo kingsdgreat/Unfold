@@ -13,7 +13,7 @@ export default function TransformSection() {
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Top Content (Mockup Images Combined Layout) */}
-          <div className="  w-full relative bg-[#F9F9F9]  h-[400px] sm:h-[500px] md:h-[594px] rounded-tl-[25.59px] mx-auto overflow-hidden">
+          <div className="  w-full relative bg-[#F9F9F9]  h-[400px] sm:h-[500px] md:h-[594px] rounded-[18px] mx-auto overflow-hidden">
             {/* Left image (lowered and positioned) */}
             <Image
               src="/Dashboard (1).png" // Adjust path to your asset
@@ -33,22 +33,24 @@ export default function TransformSection() {
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 bg-white gap-4">
-            {features.slice(0, 4).map((feature, index) => (
+            {features.slice(4, 8).map((feature, index) => (
               <div
                 key={index}
-                className="p-4 pb-8 rounded-xl bg-[#F9F9F9] shadow-sm flex flex-col items-start justify-between"
+                className="h-full p-4 pb-8 rounded-xl bg-[#F9F9F9] shadow-sm flex flex-col items-start justify-start"
               >
-                {/* Icon positioned at top left */}
-                <Image
-                  src={feature.icon}
-                  alt={feature.title}
-                  width={48}
-                  height={48}
-                  className="h-23 w-auto"
-                />
+                <div className="h-[86px]">
+                  {/* Icon positioned at top left */}
+                  <Image
+                    src={feature.icon}
+                    alt={feature.title}
+                    width={48}
+                    height={48}
+                    className="h-23 w-auto"
+                  />
+                </div>
 
                 {/* Text content at bottom */}
-                <div className="h-[140px] bottom-0  space-y-6">
+                <div className=" bottom-0  space-y-6">
                   <h3 className="text-[24px] font-bold leading-[28px] text-[#151318] font-nunito text-left">
                     {feature.title}
                   </h3>
@@ -67,19 +69,21 @@ export default function TransformSection() {
           {features.slice(4, 8).map((feature, index) => (
             <div
               key={index}
-              className="h-full gap-[60px] flex flex-col items-start justify-between p-4 rounded-xl bg-[#F9F9F9] shadow-sm relative pb-8"
+              className="h-full p-4 pb-8 rounded-xl bg-[#F9F9F9] shadow-sm flex flex-col items-start justify-start"
             >
-              {/* Icon positioned at top left */}
-              <Image
-                src={feature.icon}
-                alt={feature.title}
-                width={48}
-                height={48}
-                className="h-23 w-auto"
-              />
+              <div className="h-[86px]">
+                {/* Icon positioned at top left */}
+                <Image
+                  src={feature.icon}
+                  alt={feature.title}
+                  width={48}
+                  height={48}
+                  className="h-23 w-auto"
+                />
+              </div>
 
               {/* Text content at bottom */}
-              <div className="h-[140px] bottom-0 space-y-6">
+              <div className=" bottom-0  space-y-6">
                 <h3 className="text-[24px] font-bold leading-[28px] text-[#151318] font-nunito text-left">
                   {feature.title}
                 </h3>

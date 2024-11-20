@@ -50,7 +50,7 @@ export default function WellnessJourneySection() {
                   borderImageSource:
                     "linear-gradient(90deg, #D0CCFF 0%, #1A1458 100%)",
                   borderImageSlice: "1",
-                  backdropFilter: "blur(10px)",
+                  backdropFilter: "blur(2px)",
                   transition: "background-color 0.3s ease",
                   backgroundClip: "padding-box",
                 }}
