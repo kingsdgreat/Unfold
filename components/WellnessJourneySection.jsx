@@ -33,7 +33,7 @@ export default function WellnessJourneySection() {
             Whether you're a mindfulness enthusiast, a busy professional, or
             someone seeking balance, Unfold adapts to your needs:
           </p>
-          <ul className="space-y-4 sm:mx-auto lg:mx-0 w-max">
+          <ul className="space-y-4 mx-auto lg:mx-0 w-max">
             {[
               "Reflect on your emotions and goals.",
               "Understand your stress levels and energy.",
