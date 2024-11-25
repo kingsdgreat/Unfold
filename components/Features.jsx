@@ -15,7 +15,7 @@ export default function KeyFeaturesSection() {
       <div className="pb-[120px] lg:pb-[180px] w-full max-w-screen-xl my-auto mx-auto md:grid md:grid-cols-2 items-center gap-12 relative">
         {/* Dotted Background for Left */}
         <Image
-          src="/Group (1).png"
+          src="/Group (1).svg"
           alt="Dotted Background Left"
           objectFit="contain"
           height={800}
@@ -32,7 +32,7 @@ export default function KeyFeaturesSection() {
           {/* Mobile Image */}
           <div className="md:hidden relative flex justify-center items-center my-6">
             <Image
-              src="/Splash Screen.png"
+              src="/Splash Screen.svg"
               alt="Unfold App Mockup"
               width={185}
               height={400}
@@ -65,7 +65,7 @@ export default function KeyFeaturesSection() {
         <div className="hidden md:flex relative justify-center items-center">
           {/* Dotted Background for Right */}
           <Image
-            src="/Group.png"
+            src="/Group.svg"
             alt="Dotted Background Right"
             width={800}
             height={800}
@@ -73,7 +73,7 @@ export default function KeyFeaturesSection() {
           />
 
           <Image
-            src="/Splash Screen.png"
+            src="/Splash Screen.svg"
             alt="Unfold App Mockup"
             width={185}
             height={400}

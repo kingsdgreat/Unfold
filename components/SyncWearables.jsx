@@ -21,7 +21,7 @@ export default function SyncWearablesSection() {
           <div className="mx-auto relative max-w-[500px] max-h-[500px]  w-[85vw] h-[85vw] bg-[rgba(248,247,255,1)] rounded-full flex items-center justify-center">
             <div className="w-[75%] h-[75%] bg-[rgba(239,238,255,1)] rounded-full ">
               <Image
-                src="/Frame 2.png" // Replace with your actual image
+                src="/Frame 2.svg" // Replace with your actual image
                 alt="App Mockup"
                 width={594}
                 height={594}

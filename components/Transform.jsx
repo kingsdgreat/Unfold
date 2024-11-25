@@ -16,7 +16,7 @@ export default function TransformSection() {
           <div className="  w-full relative bg-[#F9F9F9]  h-[400px] sm:h-[500px] md:h-[594px] rounded-[18px] mx-auto overflow-hidden">
             {/* Left image (lowered and positioned) */}
             <Image
-              src="/Dashboard (1).png" // Adjust path to your asset
+              src="/Dashboard (1).svg" // Adjust path to your asset
               alt="Left content"
               width={1000} // Width of the left image
               height={2000} // Full height of the container
@@ -25,7 +25,7 @@ export default function TransformSection() {
 
             {/* Right image (partially covering left image) */}
             <Image
-              src="/Dashboard.png" // Adjust path to your asset
+              src="/Dashboard.svg" // Adjust path to your asset
               alt="Right content"
               width={1000} // Slightly larger width for the right image
               height={2000} // Full height of the container

@@ -6,26 +6,29 @@ export default function WaitlistSection() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
+    const formData = new FormData(e.target);
+
     try {
-      const response = await fetch("/api/email", {
+      const response = await fetch("https://formspree.io/f/movqlyze", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify({ email }),
+        body: formData,
       });
 
       if (response.ok) {
         setStatus("Thanks for joining our waitlist!");
-        setEmail("");
+        setEmail(""); // Clear the input field after submission
       } else {
-        setStatus("Something went wrong. Please try again.");
+        setStatus("Oops! There was a problem submitting your form");
       }
     } catch (error) {
-      setStatus("Something went wrong. Please try again.");
+      console.error("Form submission error:", error);
+      setStatus("Oops! There was a problem submitting your form");
     }
   };
 
@@ -33,9 +36,9 @@ export default function WaitlistSection() {
     <section className="bg-gray-50 py-16 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto relative">
         <div className="flex flex-col items-center justify-center relative">
-          <div className="max-w-[100%] w-[100%] sm:w-[70%] sm:max-w-[800px]  sm:self-end h-[500px]">
+          <div className="max-w-[100%] w-[100%] sm:w-[70%] sm:max-w-[800px] sm:self-end h-[500px]">
             <Image
-              src="/Frame 1 (2).png"
+              src="/Frame 1.svg"
               alt="Nature Inspiration"
               className="rounded-lg shadow-lg h-full w-full object-cover"
               width={800}
@@ -59,7 +62,12 @@ export default function WaitlistSection() {
                 body.
               </p>
 
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form
+                action="https://formspree.io/f/movqlyze"
+                method="POST"
+                onSubmit={handleFormSubmit}
+                className="space-y-4"
+              >
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
@@ -69,6 +77,7 @@ export default function WaitlistSection() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email"

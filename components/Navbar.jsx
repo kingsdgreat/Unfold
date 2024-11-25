@@ -30,7 +30,7 @@ export default function Navbar() {
             <Image
               height={1000}
               width={1000}
-              src="/feather-svgrepo-com 1.png"
+              src="/logo.svg"
               alt="Unfold Logo"
               className="h-5 w-auto"
             />
