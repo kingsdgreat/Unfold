@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -23,7 +24,7 @@ export default function Navbar() {
       <div className="w-full max-w-screen-xl my-auto mx-auto">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-2">
           {/* Logo Section */}
-          <div
+          <Link href="/"
             className="flex items-center cursor-pointer"
             onClick={() => handleScroll("hero")}
           >
@@ -35,34 +36,34 @@ export default function Navbar() {
               className="h-5 w-auto"
             />
             <span className=" font-[700] ml-2">Unfold</span>
-          </div>
+          </Link >
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-[34px]">
             <button
-              onClick={() => handleScroll("hero")}
-              className="text-gray-900 hover:text-gray-700 focus:outline-none"
-            >
-              Home
-            </button>
-            <button
               onClick={() => handleScroll("transform")}
-              className="text-gray-900 hover:text-gray-700 focus:outline-none"
+              className="text-gray-900 hover:text-gray-700 focus:outline-none "
             >
               Features
             </button>
-            <button
-              onClick={() => handleScroll("sync")}
-              className="text-gray-900 hover:text-gray-700 focus:outline-none"
+              <Link
+              href="/privacy"
+              className="hover:text-gray-700 transition focus:outline-none "
             >
-              Partnerships
-            </button>
-            <button
-              onClick={() => handleScroll("faq")}
-              className="text-gray-900 hover:text-gray-700 focus:outline-none"
+              Privacy Policy
+            </Link>
+              <Link
+              href="/#"
+              className="hover:text-gray-700 transition focus:outline-none "
             >
-              FAQ
-            </button>
+              Pricing
+            </Link>
+              <Link
+              href="/#"
+              className="hover:text-gray-700 transition focus:outline-none "
+            >
+              Resources
+            </Link>
           </div>
 
 

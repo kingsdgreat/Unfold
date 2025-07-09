@@ -3,6 +3,7 @@ import KeyFeaturesSection from "@/components/Features";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero";
 import SyncWearablesSection from "@/components/SyncWearables";
+import TestimonialsSection from "@/components/Testimonials";
 import TransformSection from "@/components/Transform";
 import WaitlistSection from "@/components/Waitlist";
 import WellnessJourneySection from "@/components/WellnessJourneySection";
@@ -13,18 +14,15 @@ export default function Home() {
       <section id="hero">
         <HeroSection />
       </section>
-      <section id="features">
         <KeyFeaturesSection />
-      </section>
-      <section id="transform">
         <TransformSection />
-      </section>
       <section id="wellness">
         <WellnessJourneySection />
       </section>
       <section id="sync">
         <SyncWearablesSection />
       </section>
+      <TestimonialsSection/>
       <section id="waitlist">
         <WaitlistSection />
       </section>

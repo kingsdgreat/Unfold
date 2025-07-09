@@ -7,6 +7,7 @@ const nunito = Nunito({
   variable: "--font-nunito",
   weight: ["200", "300", "400", "700", "900"],
 });
+
 const gordita = Gorditas({
   subsets: ["latin"],
   variable: "--font-gordita",
@@ -25,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} ${gordita.variable} antialiased`}>
+      <body className={`${nunito.variable} ${gordita.variable} antialiased`}>
         <Navbar />
         {children}
       </body>

@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 @font-face {
   font-family: 'Gordita';
   src: url('/fonts/Gordita-Regular.woff2') format('woff2');
@@ -74,5 +71,15 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Gordita', Arial, Helvetica, sans-serif;
   }
+}
+
+/* Utility classes for font families */
+.font-gordita {
+  font-family: 'Gordita', Arial, Helvetica, sans-serif;
+}
+
+.font-nunito {
+  font-family: var(--font-nunito), sans-serif;
 }

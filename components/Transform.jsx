@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function TransformSection() {
   return (
-    <section className="py-16 bg-white text-black px-6 md:px-12 lg:px-24">
+    <section id="transform" className=" bg-white text-black px-6 md:px-12 lg:px-24">
       <div className="max-w-screen-xl mx-auto space-y-8">
         {/* Title */}
         <h2 className="text-[40px] font-bold leading-[60px] text-[#151318] font-nunito text-center">
@@ -13,23 +13,23 @@ export default function TransformSection() {
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Top Content (Mockup Images Combined Layout) */}
-          <div className="  w-full relative bg-[#F9F9F9]  h-[400px] sm:h-[500px] md:h-[594px] rounded-[18px] mx-auto overflow-hidden">
+          <div className="  w-full relative bg-[#B5B8EE] h-[400px] sm:h-[500px] md:h-[594px] rounded-[18px] mx-auto overflow-hidden">
             {/* Left image (lowered and positioned) */}
             <Image
-              src="/Dashboard (1).svg" // Adjust path to your asset
+              src="/phone1.svg" // Adjust path to your asset
               alt="Left content"
               width={1000} // Width of the left image
               height={2000} // Full height of the container
-              className="w-[30%] lg:w-[40%] h-auto absolute bottom-0 right-[55%] z-10" // Lower the left image and keep it in front
+              className=" w-[75%] h-auto absolute bottom-0  z-10" // Lower the left image and keep it in front
             />
 
             {/* Right image (partially covering left image) */}
             <Image
-              src="/Dashboard.svg" // Adjust path to your asset
+              src="/phone2.svg" // Adjust path to your asset
               alt="Right content"
               width={1000} // Slightly larger width for the right image
               height={2000} // Full height of the container
-              className=" w-[40%] lg:w-[50%] h-auto bottom-0 absolute  right-[23%] z-20" // Keep it at the top and layer it over the left image
+              className="w-[99%] h-auto bottom-0 absolute  z-20" // Keep it at the top and layer it over the left image
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 bg-white gap-4">
@@ -100,29 +100,30 @@ export default function TransformSection() {
 }
 
 const features = [
+    {
+    icon: "/icons/feature (2).svg",
+    title: "Unfold Listen",
+    description:
+      "Ask Unfold anything about yourself and Unfold will answer based on your entries.",
+  },
   {
+    icon: "/icons/book.svg",
+    title: "Focused Journaling",
+    description:
+      "Capture your day in a way that adapts to your rhythm. Reflect meaningfully with a personalized end-of-day summary.",
+  },
+    {
     icon: "/icons/Vector.svg",
     title: "Advanced AI",
     description:
       "Unlock deeper interaction and reflections with the most sophisticated AI models around.",
   },
   {
-    icon: "/icons/feature.svg",
-    title: "Goal Tracking",
-    description:
-      "Identify and track your self-improvement goals with ease and efficiency.",
-  },
-  {
     icon: "/icons/feature (1).svg",
     title: "Private & Safe",
     description: "Your data is encrypted to protect your privacy.",
   },
-  {
-    icon: "/icons/feature (2).svg",
-    title: "Unfold Listen",
-    description:
-      "Ask Unfold anything about yourself and Unfold will answer based on your entries.",
-  },
+
   {
     icon: "/icons/feature (3).svg",
     title: "Mind-Body Sync",

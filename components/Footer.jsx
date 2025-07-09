@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import Image from "next/image";
 
 export default function Footer() {
@@ -38,20 +39,26 @@ export default function Footer() {
               onClick={() => handleScroll("hero")}
               className="hover:text-gray-100 transition focus:outline-none"
             >
-              Home
+              About Us
             </button>
-            <button
-              onClick={() => handleScroll("transform")}
+            <Link
+              href="/contact"
               className="hover:text-gray-100 transition focus:outline-none"
             >
-              Features
-            </button>
-            <button
-              onClick={() => handleScroll("sync")}
+              Contact Us
+            </Link>
+            <Link
+              href="/terms"
               className="hover:text-gray-100 whitespace-nowrap transition focus:outline-none"
             >
-              Partnerships
-            </button>
+              Terms & Conditions
+            </Link>
+            <Link
+              href="/privacy"
+              className="hover:text-gray-100 transition focus:outline-none"
+            >
+              Privacy
+            </Link>
             <button
               onClick={() => handleScroll("faq")}
               className="hover:text-gray-100 transition focus:outline-none"

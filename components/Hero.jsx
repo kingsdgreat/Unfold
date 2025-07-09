@@ -14,7 +14,7 @@ export default function HeroSection() {
         style={{ backgroundColor: "#00003D80" }}
       ></div>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 bg-black/5 opacity-50"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-[840px] px-4">
