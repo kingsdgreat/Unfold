@@ -31,41 +31,40 @@ export default function Navbar() {
             <Image
               height={1000}
               width={1000}
-              src="/logo.svg"
+              src="/unfold-logo.svg"
               alt="Unfold Logo"
-              className="h-5 w-auto"
+              className="h-8 w-auto"
             />
-            <span className=" font-[700] ml-2">Unfold</span>
+            <span className="font-[700] ml-2 text-2xl">un<span className="text-[#382CBE]">fold</span></span>
           </Link >
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-[34px]">
             <button
+              onClick={() => handleScroll("hero")}
+              className="text-gray-900 hover:text-gray-700 focus:outline-none"
+            >
+              Home
+            </button>
+            <button
               onClick={() => handleScroll("transform")}
-              className="text-gray-900 hover:text-gray-700 focus:outline-none "
+              className="text-gray-900 hover:text-gray-700 focus:outline-none"
             >
               Features
             </button>
-              <Link
-              href="/privacy"
-              className="hover:text-gray-700 transition focus:outline-none "
+            <button
+              onClick={() => handleScroll("sync")}
+              className="text-gray-900 hover:text-gray-700 focus:outline-none"
             >
-              Privacy Policy
-            </Link>
-              <Link
-              href="/#"
-              className="hover:text-gray-700 transition focus:outline-none "
+              Partnerships
+            </button>
+            <button
+              onClick={() => handleScroll("faq")}
+              className="text-gray-900 hover:text-gray-700 focus:outline-none"
             >
-              Pricing
-            </Link>
-              <Link
-              href="/#"
-              className="hover:text-gray-700 transition focus:outline-none "
-            >
-              Resources
-            </Link>
+              FAQ
+            </button>
           </div>
-
 
           {/* Desktop Button */}
           <div className="hidden md:block">

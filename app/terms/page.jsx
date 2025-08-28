@@ -258,7 +258,7 @@ const TermsOfUsePage = () => (
                 <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">Contact</h2>
           <p className="text-gray-700 flex leading-relaxed">
-           Questions about these Terms? E-mail <a href="mailto:kings@tryunfold.ai" className="text-blue-600 underline">kings@tryunfold.ai</a>
+           Questions about these Terms? E-mail <a href="mailto:kings@tryunfold.ai" className="text-blue-600 ml-2 underline">kings@tryunfold.ai</a>
           </p>
         </section>
       </div>

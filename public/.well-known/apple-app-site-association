@@ -1,0 +1,22 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": ["8QCG69QC2Y.com.tryunfold.unfold"],
+                "components": [
+                    {
+                        "/": "/join-team*",
+                        "comment": "Handle team invite links"
+                    },
+                    {
+                        "/": "/invite/*",
+                        "comment": "Handle general invite links"
+                    }
+                ]
+            }
+        ]
+    },
+    "webcredentials": {
+        "apps": ["8QCG69QC2Y.com.tryunfold.unfold"]
+    }
+} 

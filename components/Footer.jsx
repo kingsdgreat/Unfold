@@ -18,17 +18,17 @@ export default function Footer() {
         <div className="flex flex-col items-center lg:items-start space-y-3">
           <div className="flex items-center space-x-3">
             <Image
-              src="/feather-svgrepo-com 1.svg"
+              src="/unfold-logo-dark.svg"
               alt="Unfold Logo"
-              width={40}
-              height={40}
+              width={30}
+              height={30}
             />
             <span className="text-2xl font-semibold text-[#4A4E5A]">
-              Unfold
+              unfold
             </span>
           </div>
           <p className="text-sm text-center lg:text-left text-[#F9F9F9]">
-            © Copyright 2024 Unfold. All Rights Reserved
+            © Copyright {new Date().getFullYear()} Unfold. All Rights Reserved
           </p>
         </div>
 
@@ -41,12 +41,12 @@ export default function Footer() {
             >
               About Us
             </button>
-            <Link
-              href="/contact"
+            <button
+              onClick={() => handleScroll("waitlist")}
               className="hover:text-gray-100 transition focus:outline-none"
             >
               Contact Us
-            </Link>
+            </button>
             <Link
               href="/terms"
               className="hover:text-gray-100 whitespace-nowrap transition focus:outline-none"
