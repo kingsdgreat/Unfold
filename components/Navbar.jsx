@@ -39,7 +39,7 @@ export default function Navbar() {
           </Link >
 
           {/* Desktop Links */}
-          <div className="hidden md:flex space-x-[34px]">
+          <div className="hidden md:flex space-x-[34px] px-10">
             <button
               onClick={() => handleScroll("hero")}
               className="text-gray-900 hover:text-gray-700 focus:outline-none"
@@ -63,16 +63,6 @@ export default function Navbar() {
               className="text-gray-900 hover:text-gray-700 focus:outline-none"
             >
               FAQ
-            </button>
-          </div>
-
-          {/* Desktop Button */}
-          <div className="hidden md:block">
-            <button
-              onClick={() => handleScroll("waitlist")}
-              className="text-white text-sm bg-blue-700 transition-colors duration-300 hover:bg-blue-800 rounded-full px-4 py-2 font-medium"
-            >
-              Join the Waitlist
             </button>
           </div>
 
@@ -134,14 +124,6 @@ export default function Navbar() {
                   className="block w-full text-left text-gray-900 hover:bg-blue-100 rounded-lg px-4 py-2 font-medium transition duration-150 focus:outline-none"
                 >
                   FAQ
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleScroll("waitlist")}
-                  className="w-full text-white bg-blue-700 hover:bg-blue-800 rounded-full px-4 py-2 font-medium text-center transition duration-150 focus:outline-none"
-                >
-                  Join the Waitlist
                 </button>
               </li>
             </ul>

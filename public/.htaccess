@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Serve static fallbacks for universal links paths
+RewriteRule ^invite/.* /invite/index.html [L]
+RewriteRule ^join-team.* /join-team/index.html [L]                                                                                                                                                                                                                                                                                                                                                                                                                                      

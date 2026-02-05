@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Gordita';
-  src: url('/fonts/Gordita-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
 
 @layer base {
   :root {
@@ -71,15 +65,15 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Gordita', Arial, Helvetica, sans-serif;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   }
 }
 
 /* Utility classes for font families */
 .font-gordita {
-  font-family: 'Gordita', Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .font-nunito {
-  font-family: var(--font-nunito), sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }

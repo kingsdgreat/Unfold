@@ -24,7 +24,7 @@ export default function Home() {
       </section>
       <TestimonialsSection/>
       <section id="waitlist">
-        <WaitlistSection />
+        {/* <WaitlistSection /> */}
       </section>
       <section id="faq">
         <FAQSection />

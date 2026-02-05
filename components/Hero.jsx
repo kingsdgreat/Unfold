@@ -26,11 +26,10 @@ export default function HeroSection() {
           thoughts, feelings, and physical health into one seamless journaling
           experience.
         </p>
-        <p className="mt-6 text-sm italic">Coming soon...</p>
 
         {/* App Store and Google Play Buttons */}
         <div className="mt-8 flex justify-center gap-4">
-          <Link href="#app-store-link" className="block">
+          <Link href="https://apps.apple.com/us/app/unfold-ai/id6743553743" target="_blank" rel="noreferrer" className="block">
             <Image
               src="/icons/app-store-badge.svg"
               alt="Download on the App Store"
